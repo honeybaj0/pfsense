@@ -1,5 +1,5 @@
-export pfSense_gui_branch=master # Replace with the version you want to build
-export pfSense_port_branch=master # Replace with the version you want to build
+export pfSense_gui_branch=v2_4_5 # Replace with the version you want to build
+export pfSense_port_branch=v2_4_5 # Replace with the version you want to build
 export product_name=cpf # Replace with your product name
 
 
@@ -7,9 +7,9 @@ cd /usr/local/www/nginx/
 rm -rf *
 mkdir -p packages
 # Ports web server for core PKGs (pfSense-base, pfSense-rc, etc...)
-ln -s /root/pfsense/tmp/${product_name}_${pfSense_gui_branch}_amd64-core/.latest packages/${product_name}_${pfSense_gui_branch}_amd64-core
+ln -s /root/pfsense/tmp/${product_name}_${pfSense_gui_branch}_amd64-core/.latest packages/${product_name}_master_amd64-core
 # Ports web server for other PKGs
-ln -s /usr/local/poudriere/data/packages/${product_name}_${pfSense_gui_branch}_amd64-${product_name}_${pfSense_port_branch} packages/${product_name}_${pfSense_gui_branch}_amd64-${product_name}_${pfSense_port_branch} 
+ln -s /usr/local/poudriere/data/packages/${product_name}_${pfSense_gui_branch}_amd64-${product_name}_${pfSense_port_branch} packages/${product_name}_master_amd64-${product_name}_master 
 # Web server for monitoring ports build
 ln -s /usr/local/poudriere/data/logs/bulk/${product_name}_${pfSense_gui_branch}_amd64-${product_name}_${pfSense_port_branch}/latest poudriere
 
