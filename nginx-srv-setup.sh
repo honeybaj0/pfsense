@@ -1,5 +1,5 @@
-export pfSense_gui_branch=v2_4_5 # Replace with the version you want to build
-export pfSense_port_branch=v2_4_5 # Replace with the version you want to build
+export pfSense_gui_branch=master # Replace with the version you want to build
+export pfSense_port_branch=master # Replace with the version you want to build
 export product_name=cpf # Replace with your product name
 
 
