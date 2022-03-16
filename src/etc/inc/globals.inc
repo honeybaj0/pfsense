@@ -42,7 +42,7 @@ global $g;
 $g = array(
 	"event_address" => "unix:///var/run/check_reload_status",
 	"factory_shipped_username" => "admin",
-	"factory_shipped_password" => "pfsense",
+	"factory_shipped_password" => "password",
 	"upload_path" => "/root",
 	"dhcpd_chroot_path" => "/var/dhcpd",
 	"unbound_chroot_path" => "/var/unbound",
@@ -59,7 +59,7 @@ $g = array(
 	"cf_path" => "/cf",
 	"cf_conf_path" => "/cf/conf",
 	"www_path" => "/usr/local/www",
-	"xml_rootobj" => "pfsense",
+	"xml_rootobj" => "cpf",
 	"admin_group" => "admins",
 	"product_name" => "cpf",
 	"product_version" => trim(file_get_contents("/etc/version"), " \n"),
